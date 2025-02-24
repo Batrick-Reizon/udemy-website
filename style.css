@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     font-family: "Gabarito", serif;
 }
 
-.navbar{
+.navbar {
     display: flex;
     border-bottom: 1px solid black;
     padding: 10px;
@@ -20,12 +20,12 @@ body{
     justify-content: space-between;
 }
 
-.listpopup{
+.listpopup {
     position: relative;
     cursor: pointer;
 }
 
-.pop{
+.pop {
     background-color: white;
     position: absolute;
     width: 100px;
@@ -37,16 +37,16 @@ body{
     display: none;
 }
 
-.listpopup:hover .pop{
+.listpopup:hover .pop {
     display: block;
 }
 
-.header{
+.header {
     color: blueviolet;
     margin-left: 10px;
 }
 
-.searchbox{
+.searchbox {
     padding: 10px;
     gap: 10px;
     border: 2px solid black;
@@ -55,68 +55,72 @@ body{
     display: flex;
 }
 
-.searchbox input{
+.searchbox input {
     border: none;
     width: 100%;
     background-color: transparent;
 }
 
-.searchbox input:focus{
+.searchbox input:focus {
     outline: none;
 }
 
-.course h3{
+.course h3 {
     display: inline-block;
     margin-left: 20px;
 }
 
-.course h3:hover{
+.course h3:hover {
     cursor: pointer;
 }
 
-.list{
+.list {
     display: flex;
     gap: 20px;
 }
 
-.icons{
+.icons {
     display: flex;
     margin-left: 25px;
     gap: 20px;
 }
 
-.icons i:hover{
+.icons i:hover {
     cursor: pointer;
 }
 
-.icons i{
+.icons i {
     font-size: 20px;
 }
 
-.course h3{
+.course h3 {
     background-color: blueviolet;
     color: white;
     padding: 10px;
     border-radius: 20px;
     margin-bottom: 10px;
+    border: blueviolet solid 1px;
 }
 
-.course{
+.course h3:hover{
+    transition: 2s;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.course {
     justify-content: space-around;
     border-bottom: 1px solid black;
     display: flex;
     margin-top: 10px;
 }
 
-.course h3:hover{
-    cursor: pointer;
-    color: black;
-}
-
-.sale{
+.sale {
     position: relative;
 }
-.saletext{
+
+.saletext {
     background-color: black;
     color: white;
     width: 400px;
@@ -125,37 +129,54 @@ body{
     left: 100px;
     padding: 10px;
     text-align: center;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
-.sale p{
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.sale p {
     padding: 5px;
 }
-.one{
+
+.one {
     width: 250px;
 }
 
-.onecontainer{
+.onecontainer {
     display: flex;
     justify-content: space-between;
     padding-top: 5px;
     flex-wrap: wrap;
 }
 
-.recommended{
+.recommended {
     padding: 10px;
 }
 
-.topics{
+.topics {
     padding: 10px;
 }
 
-.topiccourse p{
+.topiccourse p {
     border: 2px solid black;
     padding: 5px;
     flex-basis: 20%;
 }
 
-.topiccourse{
+.topiccourse {
     display: flex;
     margin-top: 5px;
     gap: 10px;
@@ -163,41 +184,40 @@ body{
     justify-content: space-between;
 }
 
-.topiccourse p:hover{
+.topiccourse p:hover {
     cursor: pointer;
     background-color: lightgray;
 }
 
-.footer{
+.footer {
     background-color: black;
     color: white;
     padding: 30px;
 }
 
-.footerone{
+.footerone {
     display: flex;
     gap: 10px;
-    
+
 }
 
-.footerone p{
+.footerone p {
     margin: 20px;
 }
 
-.footertwo{
+.footertwo {
     display: flex;
     justify-content: space-between;
     margin: 20px;
     align-items: center;
 }
 
-.sectionone p:hover{
+.sectionone p:hover {
     cursor: pointer;
     color: blueviolet;
 }
 
-.sectiontwo p:hover{
+.sectiontwo p:hover {
     cursor: pointer;
     color: blueviolet;
 }
-
