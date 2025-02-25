@@ -95,6 +95,7 @@ body {
 
 .menu i{
     cursor: pointer;
+    display: none;
 }
 
 .course h3 {
@@ -129,7 +130,7 @@ body {
     color: white;
     width: 35%;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 10%;
     padding: 5px;
     text-align: center;
@@ -239,17 +240,17 @@ body {
     }
 }
 
-@media screen and (min-width:600px){
-    .menu{
-        display: none;
-    }
-}
-
 @media screen and (max-width:600px){
+    .one{
+        flex-basis: 40%;
+    }
     .searchbox,.list,.icons{
         display: none;
     }
-    .one{
-        flex-basis: 40%;
+    .menu i{
+        display: inline;
+    }
+    .course{
+        display: none;
     }
 }
