@@ -143,9 +143,8 @@ body {
 @keyframes zoom {
     0% {
         transform: scale(0);
-        opacity: 0;
+        opacity: 1;
     }
-
     100% {
         transform: scale(1);
         opacity: 1;
@@ -222,6 +221,11 @@ body {
     justify-content: space-between;
     margin: 20px;
     align-items: center;
+}
+
+.footertwo h1:hover {
+    cursor: pointer;
+    color: blueviolet;
 }
 
 .sectionone p:hover {
